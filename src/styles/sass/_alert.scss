@@ -1,0 +1,14 @@
+.success_message {
+    @include flex-center;
+    width: max-content;
+    height: max-content;
+    padding: $padding;
+    background-color: $primary;
+    margin: $margin 0;
+    transition: .3s linear all;
+    border-radius: $radius;
+    & > p {
+        font-weight: 600;
+        color: $whiteColor;
+    }
+}

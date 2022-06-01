@@ -1,0 +1,23 @@
+.registrate {
+    width: 150px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $whiteColor;
+    background-color: $primary;
+    padding: calc($padding / 3) 0;
+    border-radius: $radius;
+    margin-right: $margin * 2;
+    border: none;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.registrate:hover {
+    background-color: $secondary;
+    transform: scale(1.05);
+}
+
+.registrate:active {
+    transform: scale(.95);
+}

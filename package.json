@@ -1,0 +1,30 @@
+{
+  "name": "festcine",
+  "version": "1.0.0",
+  "description": "Landing de registro en informativa para fedecajas",
+  "main": "index.js",
+  "scripts": {
+    "dev:start": "next dev",
+    "build:start": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "landing",
+    "registro",
+    "firebase"
+  ],
+  "author": "@pbyjo on github | byjo.developer@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.8.2",
+    "next": "^12.1.6",
+    "next-videos": "1.4.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "sass": "^1.52.1",
+    "typed.js": "^2.0.12"
+  }
+}
