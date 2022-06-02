@@ -2,21 +2,24 @@
 $primary: #6cc757;
 $secondary: #449241;
 $thirsty: #edeb6f;
+$four: #edd66f;
 $whiteColor: #fafffb;
 $blackColor: #252d25;
-$grayColor: #f3f7f3;
+$grayColor: #f6faf3;
 $grayColor2: #dfe9dc;
 
 /* Sizes */
 $padding: 20px;
 $margin: 20px;
 $radius: .2rem;
+$heightHeader: 200px;
 
 /* Breakpoints */
-$phone: 320px;
-$smartphone: 420px;
+$phone: 360px;
+$smartphone: 480px;
 $tablet: 768px;
-$landescape: 992px;
+$landescape: 999px;
+$wrapMain: 1166px;
 $suppDesktop: 1280px;
 $desktop: 1600px;
 $fullDesktop: 1920px;

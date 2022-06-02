@@ -1,6 +1,6 @@
 import css from 'styled-jsx/css';
 
-import {fonts, sizes, colors} from '@styles/config';
+import {fonts, sizes, colors, breakpoints} from '@styles/config';
 
 const globals = css.global`
     * {
@@ -20,7 +20,8 @@ const globals = css.global`
     }
 
     main {
-        min-height: 100vh;
+        height: 100%;
+        min-height: max-content;
     }
 
     header {

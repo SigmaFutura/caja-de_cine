@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 /* Components */
 import Limiter from "@containers/Limiter";
@@ -13,6 +14,7 @@ import cajaDeCineIcon from '@logos/logo_caja-de-cine.png';
 import corpensarIcon from '@logos/logo_corpensar.png';
 
 function Header(props) {
+    const router = useRouter();
     return (
         <header className={main['container_header']}>
             <div className={main['container_header-info']}>
@@ -24,25 +26,30 @@ function Header(props) {
             <Limiter>
                 <Link href="/">
                     <a>
-                        <Image
-                            src={cajaDeCineIcon}
-                            alt="Logo caja de cine"
-                            width={104}
-                            height={89.3}
-                            layout={'intrinsic'}
-                            priority={true}
-                            loading="eager"
-                        />
+                        <figure>
+                            <Image
+                                src={cajaDeCineIcon}
+                                alt="Logo caja de cine"
+                                width={108}
+                                height={94.3}
+                                layout={'responsive'}
+                                priority={true}
+                                loading="eager"
+                            />
+                        </figure>
                     </a>
                 </Link>
                 <div className={main['container_header-div']}>
-                    <Registrate text={'Registrate'} />
+                    {
+                        router.pathname === '/' &&
+                        <Registrate text={'Registrate'} />
+                    }
                     <a href="https://www.corpensar.com/" target='_blank'>
                         <Image 
                             src={corpensarIcon}
                             alt="Logo corpensar"
-                            width={180}
-                            height={56}
+                            width={180 / 1.2}
+                            height={56 / 1.2}
                             layout="fixed"
                             priority={true}
                             loading="eager"

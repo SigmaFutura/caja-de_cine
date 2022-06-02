@@ -4,9 +4,9 @@ import main from '@styles/main.module.scss';
 
 function Video() {
     return (
-        <figure>
+        <figure className={main['video']}>
             <iframe
-                className={main['frame']} 
+                className={main['video_iframe']} 
                 title={false}
                 src="https://player.vimeo.com/video/715001951?h=3f37c56bb1" 
                 

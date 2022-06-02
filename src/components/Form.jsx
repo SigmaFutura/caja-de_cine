@@ -43,7 +43,7 @@ function Form() {
                 setAlert(false);
                 setTimeout(() => {
                     router.push('/');
-                }, 500);
+                }, 300);
             }, 3000);
         } catch (error) {
             console.log(error);

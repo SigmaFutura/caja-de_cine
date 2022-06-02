@@ -9,8 +9,8 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <link rel="icon" type="image/png" href="/favicon.png" />
                     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                    <link rel="icon" type="image/png" href="/favicon.png" />
                 </Head>
                 <body>
                     <Main />

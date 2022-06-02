@@ -1,0 +1,28 @@
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: $thirsty;
+        color: #f77c7c;
+    }
+    100% {
+        background-color: $four;
+    }
+}
+
+@keyframes colorChange2 {
+    0% {
+        background-color: $primary;
+    }
+    100% {
+        background-color: $secondary;
+        color: $thirsty;
+    }
+}

@@ -1,26 +1,28 @@
 .form_container {
-    width: 100%;
-    max-width: $suppDesktop;
-    min-height: max-content;
-    margin: calc($margin * 3) auto 0 auto;
-    background-color: $grayColor;
-    border-radius: $radius;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
-
     @include flex_center;
     justify-content: space-between;
 
+    width: 100%;
+    max-width: $suppDesktop;
+    flex-wrap: wrap;
+    margin: calc($margin * 3) auto 0 auto;
+    background-color: $grayColor;
+    border-radius: $radius;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
     &-wrapper {
         @include flex-center;
-        width: 30%;
-        min-height: inherit;   
+        width: calc(40% - $padding);
+        min-width: 300px;
+        height: max-content;
         padding: $padding;
         border-radius: $radius 0 0 $radius;
         background-color: rgba($color: $primary, $alpha: .5);
     }
 
     &-form {
-        width: 70%;
+        width: calc(55% - $padding);
+        min-width: calc(350px - $padding);
         height: max-content;
         padding: $padding;
         @include flex_center-column;
@@ -33,7 +35,7 @@
 }
 
 .formulario {
-    width: 60%;
+    width: 80%;
     @include flex_center-column;
     align-items: center;
 
@@ -93,4 +95,36 @@
     border: none;
     transition: .2s ease-in-out all;
     background-color: $whiteColor;
+}
+
+@media screen and(max-width: 1149px) {
+    .form_container {
+        justify-content: center;
+        margin: 0 auto;
+        box-shadow: none;
+        &-wrapper {
+            width: 100%;
+        }
+
+        &-form {
+            width: 100%;
+            padding: calc($padding * 4);
+        }
+    }
+}
+
+@media screen and(max-width: 420px) {
+    .form_container {
+        &-form {
+            padding: 0;
+        }
+    }
+
+    .formulario {
+        width: 85%;
+        padding: 0 0 calc($padding * 2) 0;
+        & > input {
+            width: 100%;
+        }
+    }
 }

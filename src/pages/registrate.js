@@ -17,6 +17,10 @@ function registrate() {
     return (
         <Layout title={title}>
             <section className={main['form_container']}>
+                <div className={main['form_container-form']}>
+                    <h2>Registrate</h2>
+                    <Form />
+                </div>
                 <div className={main['form_container-wrapper']}>
                     <Image 
                         alt="Slogan Fedecajas"
@@ -26,10 +30,6 @@ function registrate() {
                         layout={'intrinsic'}
                         loading="lazy"
                     />
-                </div>
-                <div className={main['form_container-form']}>
-                    <h2>Registrate</h2>
-                    <Form />
                 </div>
             </section>
         </Layout>

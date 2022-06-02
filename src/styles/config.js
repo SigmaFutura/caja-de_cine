@@ -19,10 +19,11 @@ export const sizes = {
     heightHeader: '200px',
     borderRadius: '4px',
     fontSize: '16px',
+    fontSizeMobile: '12px',
 }
 
 export const breakpoints = {
-    phone: '320px',
+    phone: '340px',
     smartphone: '420px',
     tablet: '768px',
     landescape: '992px',

@@ -5,7 +5,7 @@
     padding: $padding;
     background-color: $primary;
     margin: $margin 0;
-    transition: .3s linear all;
+    animation: opacity .5s ease-in-out;
     border-radius: $radius;
     & > p {
         font-weight: 600;
