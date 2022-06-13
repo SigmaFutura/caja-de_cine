@@ -1,0 +1,21 @@
+.footer_container {
+    width: 100%;
+    height: max-content;
+    background-color: $secondary;
+}
+
+.footer_content {
+    max-width: $suppDesktop;
+    height: max-content;
+
+    &-invita {
+        & > h3 {
+            color: $whiteColor;
+            font-size: 2rem;
+        }
+        & > figure {
+            width: 100%;
+            max-width: 180px;
+        }
+    }
+}

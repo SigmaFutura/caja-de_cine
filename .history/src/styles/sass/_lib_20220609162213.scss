@@ -1,0 +1,185 @@
+.limiter {
+    width: 100%;
+    max-width: $suppDesktop;
+    height: max-content;
+    margin: 0 auto;
+    padding: 0 ;
+    @include flex_center_between;
+}
+
+.title {
+    width: max-content;
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+@media screen and(max-width: $tablet) {
+    .title {
+        font-size: 2rem;
+    }
+}
+
+.container_header {
+    @include flex_center-column;
+    background-color: $grayColor;
+    &-info {
+        display: flex;
+        width: 100%;
+        font-size: .9rem;
+        font-weight: 700;;
+        color: $whiteColor;
+        background-color: $secondary;
+        padding: calc($padding / 5) 0;
+
+        & > div {
+            justify-content: flex-start;
+            & > p:first-child {
+                margin: 0 calc($margin / 3) 0 $margin;
+            }
+        }
+    }
+
+    &-div {
+        @include flex-center;
+        margin: 0 calc($margin * 1.5) 0 0;
+    }
+
+    & > div:last-child {
+        padding: calc($padding * 1.6) 0;
+
+        & > a {
+            @include flex-center;
+            align-items: flex-start;
+            & > figure {
+                min-width: 120px;
+                margin: 0 $margin 0 calc($margin * 1.5);
+            }
+            & > figure:last-child {
+                min-width: 94px;
+            }
+        }
+    }
+}
+
+.main_container {
+    width: 100%;
+    max-width: $desktop;
+    margin: 0 auto;
+    padding: $padding 0;
+    height: max-content;
+    min-height: 760px;
+    @include flex_center_between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    &-presentation {
+        width: max-content;
+        height: inherit;
+        margin: 0 0 0 $margin;
+        @include flex_center-column;
+        & > h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-style: italic;
+            color: $secondary;
+        }
+
+        & > h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $primary;
+            margin-bottom: $margin;
+        }
+
+        & > p {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: calc($margin / 2);
+        }
+
+        & > div {
+            margin: 0 0 $margin 0;
+            & > span {
+                font-size: 2rem;
+                font-weight: 700;
+                color: $thirsty;
+                background-color: $secondary;
+                padding: 0 5px 0 5px;
+                border-radius: 0;
+            }
+    
+            & > span:last-child {
+                padding: 0 5px;
+                border-radius: 0;
+                background-color: $thirsty;
+                color: $secondary;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: $wrapMain) {
+    .main_container {
+        padding: $padding 0 calc($padding * 2) 0;
+        &-presentation {
+            align-items: center;
+            margin: 0 $margin;
+            & > h1 {
+                font-size: 2.6rem;
+                width: max-content;
+                text-align: center;
+            }
+            & > h3 {
+                margin: $margin 0;
+            }
+
+            & > p {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+
+            & > .registrate {
+                width: 50%;
+                font-size: 1.4rem;
+                margin: 0 0 $margin 0;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: $tablet){
+    .container_header {
+        &-info {
+            & > div {
+                justify-content: center;
+                & > p:first-child {
+                    margin: 0 calc($margin / 3) 0 0;
+                }
+            }
+        }
+    }
+    .main_container {
+        min-height: max-content;
+    }
+}
+@media screen and(max-width: 527px){
+    .container_header {
+        &-div {
+            & .registrate {
+                display: none;
+            }
+        }
+    }
+}
+@media screen and(max-width: $smartphone){
+    .container_header {
+        &-info {
+            font-size: .7rem;
+        }
+
+        & > div:last-child {
+            padding: $margin 0;
+        }
+    }
+}

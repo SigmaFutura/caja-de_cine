@@ -1,0 +1,16 @@
+.video {
+    width: 100%;
+    max-width: 620px;
+    min-width: 320px;
+    aspect-ratio: 16/9;
+    border-radius: $radius;
+    margin: 0 $margin;
+    background-color: $grayColor2;
+    &_iframe {
+        width: 100%;
+        max-width: inherit;
+        min-width: inherit;
+        aspect-ratio: inherit;
+        border-radius: inherit;
+    }
+}
