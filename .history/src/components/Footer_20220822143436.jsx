@@ -12,7 +12,7 @@ import logoInvictos from '@logos/logo_invictos.png';
 import logoUpamplona from '@logos/logo_upamplona.png';
 import logoMiccbo from '@logos/logo_miccbo.png';
 import logoLaIsla from '@logos/logo_medioDia.png';
-import logoCajamag from '@logos/cajamag_logo.png';
+import logoCajamag from '@logos/cajamag_logo.png'
 
 const invita = [
     {
@@ -30,11 +30,8 @@ const invita = [
         height: 59
     }, 
     {
-        link: 'https://www.cajamag.com.co/',
-        logo: logoCajamag,
-        alt: 'Logo de Cajamag',
-        width: 266,
-        height: 96
+        link: '',
+        logo:
     }
 ]
 

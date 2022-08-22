@@ -12,7 +12,7 @@ import Registrate from '@elements/Registrate';
 function Feature_3(props) {
 
     const etapas = [
-        'Inscripciones: 22 de agosto 2022',
+        'Inscripciones: 20 Junio 2022',
         'Seminarios, charlas y talleres',
         'Invitados nacionales e internacionales',
         'Muestra internacional de cine y grandes premios',

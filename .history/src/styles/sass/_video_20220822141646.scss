@@ -6,7 +6,7 @@
     border-radius: $radius;
     margin: 0 $margin;
     background-color: $grayColor2;
-    @extend %boxshadow;
+    @extend %bosxshadow;
     &_iframe {
         width: 100%;
         max-width: inherit;

@@ -30,7 +30,7 @@ const invita = [
         height: 59
     }, 
     {
-        link: 'https://www.cajamag.com.co/',
+        link: '',
         logo: logoCajamag,
         alt: 'Logo de Cajamag',
         width: 266,

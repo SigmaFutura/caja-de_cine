@@ -5,7 +5,6 @@ import Title from "@components/Title";
 import Feature from "@containers/Feature";
 import Feature_2 from "@containers/Feature_2";
 import Feature_3 from "@containers/Feature_3";
-import Banner from "@containers/Banner";
 
 function index() {
     const title = "Home";
@@ -13,7 +12,6 @@ function index() {
     return (
         <Layout title={title}>
             <MainSection />
-            <Banner />
             <Feature />
             <Title title={'Categorias:'} />
             <Feature_2 />

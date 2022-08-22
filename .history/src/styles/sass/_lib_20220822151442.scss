@@ -143,8 +143,8 @@
 .banner_container {
     width: 100%;
     max-width: $desktop;
+    padding: $padding 0;
     margin: 0 auto;
-    padding: calc($padding * 3) 0;
     @include flex-center;
 }
 
@@ -224,12 +224,6 @@
                     display: none;
                 }
             }
-        }
-    }
-
-    .banner_container { 
-        & > figure {
-            margin: $margin;
         }
     }
 }

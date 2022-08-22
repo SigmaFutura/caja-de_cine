@@ -226,12 +226,6 @@
             }
         }
     }
-
-    .banner_container { 
-        & > figure {
-            margin: $margin;
-        }
-    }
 }
 @media screen and(max-width: $smartphone){
     .container_header {

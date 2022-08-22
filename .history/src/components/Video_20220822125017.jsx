@@ -8,7 +8,8 @@ function Video() {
             <iframe
                 className={main['video_iframe']} 
                 title={false}
-                src="https://www.youtube.com/embed/PznmSKFD6J4" 
+                src="https://youtu.be/PznmSKFD6J4" 
+
                 frameBorder="0" 
                 allowFullScreen
                 sandbox="allow-same-origin allow-scripts allow-presentation"

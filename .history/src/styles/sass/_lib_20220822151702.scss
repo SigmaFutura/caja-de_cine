@@ -146,6 +146,10 @@
     margin: 0 auto;
     padding: calc($padding * 3) 0;
     @include flex-center;
+
+    & > figure {
+        margin: $margin;
+    }
 }
 
 @media screen and(max-width: $wrapMain) {

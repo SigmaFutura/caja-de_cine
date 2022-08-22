@@ -21,11 +21,5 @@
 
 %background-gradient {
     background: rgb(12,99,65);
-    background: linear-gradient(82deg, rgba(0,163,82,1) 21%, rgba(12,99,65,1) 77%);
-}
-
-%boxshadow {
-    -webkit-box-shadow: 5px 6px 16px 1px rgba(0,0,0,0.4);
-    -moz-box-shadow: 5px 6px 16px 1px rgba(0,0,0,0.4);
-    box-shadow: 5px 6px 16px 1px rgba(0,0,0,0.4);
+    background: linear-gradient(82deg, rgba(0,163,82,.5) 21%, rgba(12,99,65,1) 77%);
 }
