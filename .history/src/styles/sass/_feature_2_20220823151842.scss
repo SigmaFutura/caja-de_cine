@@ -1,0 +1,68 @@
+.feature_2 {
+    @include flex_center-column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: $desktop;
+    margin: calc($margin * 3) auto;
+    & > div {
+        @include flex-center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
+        & > div {
+            @include flex_center-column;
+            align-items: center;
+            max-width: 320px;
+            padding: $padding;
+    
+            & > h2 {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: calc($margin * 2);
+                color: $blackColor;
+            }
+    
+            & > p {
+                font-size: 1.2rem;
+                color: $whiteColor;
+                font-weight: 600;
+                text-align: center;
+                padding: $padding;
+                border-radius: calc($radius * 2);
+                background-color: rgba($color: rgb(103, 30, 172), $alpha: .4);
+            }
+    
+            & > p:last-child {
+                font-size: 1rem;
+                font-weight: bold;
+                color: $blackColor;
+                background-color: transparent;
+                background-color: rgba($color: $primary, $alpha: .2);
+                margin-top: calc($margin / 2);
+                padding: calc($padding / 2);
+            }
+        }
+    }
+
+    & > p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        background-color: rgba($color: rgb(172, 30, 77), $alpha: .8);
+        margin-top: $margin;
+        padding: $padding;
+        border-radius: $radius;
+        color: $whiteColor;
+        text-align: center;
+    }
+}
+
+@media screen and(max-width: $tablet){
+    .feature_2 {
+        margin: $margin 0;
+
+        & > div {
+            justify-content: center;
+        }
+    }
+}

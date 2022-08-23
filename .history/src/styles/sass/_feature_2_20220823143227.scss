@@ -1,0 +1,55 @@
+.feature_2 {
+    @include flex_center-column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: $desktop;
+    margin: calc($margin * 3) auto;
+    & > div {
+        @include flex-center;
+        & > div {
+            @include flex_center-column;
+            align-items: center;
+            max-width: 320px;
+            padding: $padding;
+    
+            & > h2 {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: calc($margin * 2);
+                color: $blackColor;
+            }
+    
+            & > p {
+                font-size: 1.2rem;
+                color: $blackColor;
+                font-weight: 600;
+                text-align: center;
+                padding: $padding;
+                border-radius: calc($radius * 2);
+                background-color: rgba($color: $thirsty, $alpha: .8);
+            }
+    
+            & > p:last-child {
+                font-size: 1rem;
+                font-weight: bold;
+                color: $blackColor;
+                background-color: transparent;
+                background-color: rgba($color: $primary, $alpha: .2);
+                margin-top: calc($margin / 2);
+                padding: calc($padding / 2);
+            }
+        }
+    }
+
+    & > p {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
+
+@media screen and(max-width: $tablet){
+    .feature_2 {
+        margin: $margin 0;
+    }
+}

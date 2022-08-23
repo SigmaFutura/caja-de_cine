@@ -1,0 +1,193 @@
+.feature, .feature_3 {
+    @include flex-center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: $desktop;
+    height: max-content;
+    margin: 0 auto calc($margin * 5) auto;
+    background-color: rgba($color: $primary, $alpha: .2);
+    border-radius: calc($radius * 2);
+    padding: calc($padding * 4) 0;
+    position: relative;
+    &-title, &-list {
+        width: 50%;
+        height: max-content;
+    }
+    
+    &-title {
+        max-width: 700px;
+        min-width: 400px;
+        @include flex_center-column;
+        align-items: center;
+        
+        position: sticky;
+        top: 0;
+        & > h2 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: calc($margin * 2);
+            color: $blackColor;
+
+            & > span {
+                font-weight: bold;
+                font-style: normal;
+                animation: opacity .5s ease-in-out infinite alternate;
+                padding: 0 5px;
+            }
+        }
+
+        & > figure {
+            width: 100%;
+            max-width: calc(456px / 1.1);
+            min-width: 300px;
+            height: max-content;
+            overflow: hidden;
+            border-radius: calc($radius * 5);
+        }
+    }
+
+    &-list {
+        min-width: 500px;
+        @include flex-center;
+        & > ol {
+            max-width: 90%;
+
+            & > li {
+                width: max-content;
+                max-width: 500px;
+                font-size: 1.5rem;
+                font-weight: bold;
+                background-color: $primary;
+                color: $whiteColor;
+                margin-bottom: calc($margin * 5);
+                padding: $padding;
+                border-radius: calc($radius * 2);
+                transition: .1s linear;
+            }
+
+            & > li::marker {
+                color: $primary;
+            }
+
+            & > li:nth-child(even) {
+                background-color: $thirsty;
+                color: $blackColor;
+            }
+
+            & > li:hover {
+                background-color: $thirsty;
+                color: $blackColor;
+            }
+
+            & > li:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.feature_3 {
+    width: 100%;
+    max-width: $suppDesktop;
+    @include flex_center-column;
+    background-color: rgba($color: $thirsty, $alpha: .2);
+    &-title {
+        width: 100%;
+        position: initial;
+    }
+    &-list {
+        width: 100%;
+        & > ol {
+
+            & > li {
+                margin-bottom: $margin;
+                list-style: none;
+                animation: colorChange2 3s infinite ease-in-out alternate;
+            }
+
+            & > li:nth-child(even) {
+                color: rgba($color: $blackColor, $alpha: .8);
+                animation: colorChange 4.2s infinite ease-in-out alternate;
+            }
+        }
+    }
+    &-button {
+        width: max-content;
+        align-self: center;
+        margin: calc($margin * 2) 0 0 0;
+        & > a {
+            font-size: 1.5rem;
+            margin: 0;
+            padding: 10px;
+        }
+    }
+}
+
+/* Mediaqueriees */
+@media screen and(max-width: $wrapMain) {
+    .feature {
+        padding: calc($padding * 2) 0;
+        &-title {
+            margin-bottom: $margin * 2;
+            & > h2 {
+                font-size: 2.4rem;
+            }
+        }
+        &-list {
+            & > ol {
+                & > li {
+                    max-width: max-content;
+                    font-size: 1.4rem;
+                    margin-bottom: $margin;
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: $landescape) {
+    .feature {
+        &-title {
+            position: initial;
+        }
+    }
+}
+
+@media screen and(max-width: $tablet) {
+    .feature {
+        margin: $margin 0;
+    }
+    .feature, .feature_3 {
+        &-title {
+            width: 100%;
+            min-width: 300px;
+            margin-left: $margin;
+            margin-right: $margin;
+            & > h2 {
+                font-size: 2rem;
+            }
+        }
+        &-list {
+            width: 100%;
+            min-width: initial;
+            & > ol {
+                @include flex_center-column;
+                align-items: center;
+                & > li {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+    .feature_3 {
+        padding: calc($padding * 2) 0;
+        margin: 0;
+        &-title {
+            margin: 0;
+        }
+    }
+}
