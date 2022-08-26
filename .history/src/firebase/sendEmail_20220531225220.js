@@ -1,7 +1,7 @@
 import {db} from './config';
 import {setDoc, doc, Timestamp} from 'firebase/firestore';
 
-const sendUserToDB = async (nombre, celular, email, ciudad, caja, otherCaja) => {
+const sendUserToDB = async (nombre, celular, email, ciudad, caja) => {
     try {
         await setDoc(doc(db, 'users_caja-cine', `${nombre}-${Math.random()}`), {
             nombre,
@@ -9,8 +9,7 @@ const sendUserToDB = async (nombre, celular, email, ciudad, caja, otherCaja) => 
             email,
             createdAt: Timestamp.now(new Date()),
             ciudad,
-            caja,
-            otherCaja
+            caja
         })
         console.log('Usuario registrado en la base de datos')
     } catch (error) {

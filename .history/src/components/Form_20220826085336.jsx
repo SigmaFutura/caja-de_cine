@@ -148,7 +148,7 @@ function Form() {
                 type="text" 
                 name="otherCaja" 
                 id="otherCaja" 
-                value={user.otherCaja}
+                value={user.otraCaja}
                 placeholder='Caja de compensación'
                 onChange={handleChange}
                 maxLength={18}

@@ -23,7 +23,6 @@ function Form() {
         email: '', 
         ciudad: '', 
         cajaCompensacion: undefined,
-        otherCaja: ''
     });
 
     const handleChange = ({target: {name, value}}) => {
@@ -38,7 +37,7 @@ function Form() {
         setPostLoading(!postLoading);
         setUser({...user})
         try {
-            await sendUserToDB(user.nombre, user.celular, user.email, user.ciudad, user.cajaCompensacion, user.otherCaja);
+            await sendUserToDB(user.nombre, user.celular, user.email, user.ciudad, user.cajaCompensacion);
             setAlert(true);
             setTimeout(() => {
                 setAlert(false);
@@ -143,16 +142,6 @@ function Form() {
                     })
                 }
             </select>
-            <label htmlFor="otherCaja">Otra</label>
-            <input 
-                type="text" 
-                name="otherCaja" 
-                id="otherCaja" 
-                value={user.otherCaja}
-                placeholder='Caja de compensación'
-                onChange={handleChange}
-                maxLength={18}
-            />
             <button type="submit">
                 {
                     loading || postLoading ?
