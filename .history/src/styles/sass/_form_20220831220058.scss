@@ -1,0 +1,130 @@
+.form_container {
+    @include flex_center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: $suppDesktop;
+    flex-wrap: wrap;
+    margin: 0 auto 0 auto;
+    background-color: $grayColor;
+    border-radius: $radius;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    &-wrapper {
+        @include flex-center;
+        width: calc(40% - $padding);
+        min-width: 300px;
+        height: max-content;
+        padding: $padding;
+        border-radius: $radius 0 0 $radius;
+        background-color: rgba($color: $primary, $alpha: .5);
+    }
+
+    &-form {
+        width: calc(55% - $padding);
+        min-width: calc(350px - $padding);
+        height: max-content;
+        padding: $padding;
+        @include flex_center-column;
+        align-items: center;
+
+        & > h2 {
+            margin: $margin 0 $margin 0;
+        }
+    }
+}
+
+.formulario {
+    width: 80%;
+    @include flex_center-column;
+    align-items: center;
+
+    & > label {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+        cursor: pointer;
+        align-self: flex-start;
+    }
+
+    input {
+        font-size: .9rem;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 6px 8px;
+        border: 2px solid transparent;
+        transition: .2s ease-in-out all;
+        background-color: rgba($color: $thirsty, $alpha: .1);
+    }
+
+    input:focus {
+        border: 2px solid $primary;
+        outline: none;
+        background-color: rgba($color: $thirsty, $alpha: .8);
+    }
+
+    button {
+        font-size: 1rem;
+        font-weight: bold;
+        width: 80%;
+        padding: 8px;
+        margin-top: 10px;
+        border: none;
+        border-radius: $radius;
+        cursor: pointer;
+        background-color: $thirsty;
+        transition: .1s ease-in-out all;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+    }
+
+    button:active {
+        transform: scale(.95);
+    }
+}
+
+.options {
+    width: 100%;
+    font-size: .8rem;
+    font-weight: bold;
+    color: $blackColor;
+    margin-bottom: 20px;
+    padding: 8px 8px;
+    border: none;
+    transition: .2s ease-in-out all;
+    background-color: $whiteColor;
+}
+
+@media screen and(max-width: 1149px) {
+    .form_container {
+        justify-content: center;
+        margin: 0 auto;
+        box-shadow: none;
+        &-wrapper {
+            width: 100%;
+        }
+
+        &-form {
+            width: 100%;
+            padding: calc($padding * 4);
+        }
+    }
+}
+
+@media screen and(max-width: 420px) {
+    .form_container {
+        &-form {
+            padding: 0;
+        }
+    }
+
+    .formulario {
+        width: 85%;
+        padding: 0 0 calc($padding * 2) 0;
+        & > input {
+            width: 100%;
+        }
+    }
+}

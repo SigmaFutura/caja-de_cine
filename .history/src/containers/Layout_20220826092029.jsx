@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
-import favicon from '@public/favicon.png'
 
 import { useRouter } from "next/router";
 
@@ -18,7 +17,6 @@ function Layout(props) {
     return (
         <Fragment>
             <Head>
-                <link rel="shortcut icon" type="image/png" href={favicon.src} />
                 <title>{title} | Caja de cine</title>
             </Head>
             <Header />

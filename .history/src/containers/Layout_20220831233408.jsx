@@ -18,7 +18,7 @@ function Layout(props) {
     return (
         <Fragment>
             <Head>
-                <link rel="shortcut icon" type="image/png" href={favicon.src} />
+                <link rel="shortcut icon" type="image/png" href={favicon} />
                 <title>{title} | Caja de cine</title>
             </Head>
             <Header />
