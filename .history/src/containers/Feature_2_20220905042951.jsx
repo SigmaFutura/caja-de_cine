@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Terms from '@components/Terms';
 
 /* CSS */
 import main from '@styles/main.module.scss'
@@ -8,6 +7,7 @@ import main from '@styles/main.module.scss'
 import spotIcon from '@icons/spot.png';
 import docIcon from '@icons/documental.png';
 import ficcionIcon from '@icons/ficcion.png';
+import Terms from '@components/Terms';
 
 function Feature_2() {
 

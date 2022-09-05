@@ -186,8 +186,10 @@
 
 .terms {
     max-width: 27%;
-    margin: $margin 0 0 0;
+    @include flex_center-column;
+    margin: $margin 0 0 $margin;
     padding: $padding;
+    flex-wrap: wrap;
 
     & > a {
         background-color: rgba($color: $grayColor2, $alpha: .9);
@@ -197,7 +199,6 @@
         margin: 5px calc($margin / 2);
         border-radius: $radius;
         transition: .1s;    
-        text-align: center;
     }
 
     & > a:hover {

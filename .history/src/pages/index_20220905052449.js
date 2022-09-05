@@ -18,6 +18,7 @@ function index() {
             <Title title={'Categorías:'} />
             <Feature_2 />
             <Feature_3 />
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScRLbwU8LSwxfTO29P7ASngqotL4k-9IhW7Cyy0tV9472jIaQ/viewform?embedded=true" width="640" height="3020" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
         </Layout>
     );
 }

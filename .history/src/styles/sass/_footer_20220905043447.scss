@@ -33,10 +33,12 @@
     }
 
     &-info {
+        max-width: 25%;
         @include flex-center;
-        margin: $margin 0 0 $margin;
+        margin: $margin;
         padding: $padding;
         flex-wrap: wrap;
+        background-color: $secondary;
         & > p {
             width: max-content;
         }
@@ -53,16 +55,11 @@
 
         & > a {
             background-color: rgba($color: $grayColor2, $alpha: .9);
-            color: black;
+            color: rgb(24, 78, 148);
             font-weight: 700;
             padding: $padding / 2;
             margin: 5px calc($margin / 2);
             border-radius: $radius;
-            transition: .1s;    
-        }
-
-        & > a:hover {
-            transform: scale(1.1);
         }
     }
 }

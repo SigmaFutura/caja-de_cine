@@ -8,7 +8,6 @@ import eventIcon from '@images/event_cine.png';
 
 /* Components */
 import Registrate from '@elements/Registrate';
-import Terms from '@components/Terms';
 
 function Feature_3(props) {
 
@@ -57,7 +56,6 @@ function Feature_3(props) {
             <div className={main['feature_3-button']}>
                 <Registrate text={'Regístrate'} />
             </div>
-            <Terms />
         </section>
     );
 }

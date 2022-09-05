@@ -185,7 +185,8 @@
 }
 
 .terms {
-    max-width: 27%;
+    max-width: 200px;
+    @include flex_center-column;
     margin: $margin 0 0 0;
     padding: $padding;
 

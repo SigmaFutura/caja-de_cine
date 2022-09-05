@@ -33,6 +33,7 @@
     }
 
     &-info {
+        max-width: 27%;
         @include flex-center;
         margin: $margin 0 0 $margin;
         padding: $padding;

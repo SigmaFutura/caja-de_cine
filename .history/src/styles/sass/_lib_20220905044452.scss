@@ -186,6 +186,7 @@
 
 .terms {
     max-width: 27%;
+    @include flex_center-column;
     margin: $margin 0 0 0;
     padding: $padding;
 
@@ -197,7 +198,6 @@
         margin: 5px calc($margin / 2);
         border-radius: $radius;
         transition: .1s;    
-        text-align: center;
     }
 
     & > a:hover {

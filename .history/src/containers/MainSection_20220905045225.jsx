@@ -39,12 +39,12 @@ function MainSection() {
                 <h1>Festival <br /> Caja de Cine</h1>
                 <h3>Cine desde las Regiones</h3>
                 <p>
-                    Sabemos que tienes una historia de la cultura de tu región, <br /> cuéntala y haz que se
-                    hinche tu corazón.
+                    Sabemos que tienes una historia de la cultura de tu región, cuéntala y haz que se
+                    hinche tu corazón. Participa con tu familia y amigos.
                 </p>
                 <div>
                     <span className='typed'>
-                        Participa con tu familia y amigos
+                        historias e iniciativas
                     </span>
                     <TextDynamic />
                 </div>

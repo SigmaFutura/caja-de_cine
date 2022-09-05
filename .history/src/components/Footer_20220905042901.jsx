@@ -120,7 +120,7 @@ function Footer(props) {
                     </div>
                 </div>
                 <div className={main['footer_content-info']}>
-                    <p>© Copyright 2022 FEDECAJAS.</p>
+                    <p>© Copyright 2016 FEDECAJAS.</p>
                     <p>Todos los Derechos Reservados</p>
                 </div>
             </div>

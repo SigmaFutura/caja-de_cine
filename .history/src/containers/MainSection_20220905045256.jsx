@@ -40,11 +40,11 @@ function MainSection() {
                 <h3>Cine desde las Regiones</h3>
                 <p>
                     Sabemos que tienes una historia de la cultura de tu región, <br /> cuéntala y haz que se
-                    hinche tu corazón.
+                    hinche tu corazón. Participa con tu familia y amigos.
                 </p>
                 <div>
                     <span className='typed'>
-                        Participa con tu familia y amigos
+                        historias e iniciativas
                     </span>
                     <TextDynamic />
                 </div>
