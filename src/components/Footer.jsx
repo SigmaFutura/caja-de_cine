@@ -28,45 +28,8 @@ const invita = [
         alt: 'Logo de Corpensar',
         width: 264,
         height: 59
-    }, 
-    {
-        link: 'https://www.cajamag.com.co/',
-        logo: logoCajamag,
-        alt: 'Logo de Cajamag',
-        width: 266,
-        height: 96
-    }
-]
+    },
 
-const apoya = [
-    {
-        logo: logoInvictos,
-        link: 'https://invictos.com.co/',
-        alt: 'Logo de Invictos',
-        width: 247,
-        height: 75
-    },
-    {
-        logo: logoUpamplona,
-        link: 'https://www.unipamplona.edu.co/',
-        alt: 'Logo de U. Pamplona',
-        width: 247 / 3.8,
-        height: 260 /  3.8
-    },
-    {
-        logo: logoMiccbo,
-        link: 'https://www.facebook.com/miccbo.muestrainternacionaldecine',
-        alt: 'Logo de Miccbo',
-        width: 457 / 3,
-        height: 141 /  3
-    },
-    {
-        logo: logoLaIsla,
-        link: '/',
-        alt: 'Logo La Isla Mediodia',
-        width: 324 / 2,
-        height: 92 /  2
-    }
 ]
 
 function Footer(props) {
@@ -96,31 +59,9 @@ function Footer(props) {
                         </div>
                     </div>
                 </div>
-                <div className={main['footer_content_right']}>
-                    <div className={main['footer_content-apoya']}>
-                        <h3>
-                            Apoya:
-                        </h3>
-                        <div>
-                            {
-                                apoya.map((item, index) => {
-                                    return (
-                                        <LinkImage
-                                            key={index}
-                                            link={item.link}
-                                            src={item.logo}
-                                            alt={item.alt}
-                                            width={item.width}
-                                            height={item.height}
-                                        />
-                                    )
-                                })
-                            }
-                        </div>
-                    </div>
-                </div>
+
                 <div className={main['footer_content-info']}>
-                    <p>© Copyright 2022 FEDECAJAS.</p>
+                    <p>© Copyright 2023 FEDECAJAS.</p>
                     <p>Todos los Derechos Reservados</p>
                 </div>
             </div>

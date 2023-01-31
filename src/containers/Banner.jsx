@@ -12,7 +12,7 @@ const Banner = () => {
         <section className={main['banner_container']}>
             <figure>
                 <Image
-                    src={splashAmarillo} 
+                    src={splashAmarillo}
                     alt="Banner convocatoria"
                     width={281 * 1.4}
                     height={249 * 1.4}
@@ -22,7 +22,7 @@ const Banner = () => {
             </figure>
             <figure>
                 <Image
-                    src={bannerConvocatoria} 
+                    src={bannerConvocatoria}
                     alt="Banner convocatoria"
                     width={905 * 1.2}
                     height={357 * 1.2}
@@ -31,7 +31,7 @@ const Banner = () => {
                 />
             </figure>
         </section>
-    ) 
+    )
 }
 
 export default Banner;

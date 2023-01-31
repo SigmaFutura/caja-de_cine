@@ -20,64 +20,11 @@ function Header(props) {
         <header className={main['container_header']}>
             <div className={main['container_header-info']}>
                 <Limiter>
-                    <p>Tel: +57 320 834 3820</p>
-                    <p>| cajadecine@invictos.com.co</p>
+                    <p>Tel: +57 320 834 3890</p>
+                    <p>| cajadecinefestival@gmail.com</p>
                 </Limiter>
             </div>
-            <Limiter>
-                <div className={main['container_header-div']}>
-                    <Link href="/">
-                        <a>
-                            <figure>
-                                <Image
-                                    src={fedecajaIcon}
-                                    alt="Logo caja de cine"
-                                    width={94}
-                                    height={80}
-                                    layout={'responsive'}
-                                    priority={true}
-                                    loading="eager"
-                                    />
-                            </figure>
-                        </a>
-                    </Link>
-                    <a href="https://www.corpensar.com/" target='_blank'>
-                        <Image 
-                            src={corpensarIcon}
-                            alt="Logo corpensar"
-                            width={180 / 1.2}
-                            height={56 / 1.2}
-                            layout="fixed"
-                            priority={true}
-                            loading="eager"
-                        />
-                    </a>
-                </div>
-                <div className={main['container_register']}>
-                    {
-                        router.pathname === '/registrate' &&
-                        <Link href="/">
-                            <a>
-                                <figure>
-                                    <Image
-                                        src={cajaDeCineIcon}
-                                        alt="Logo caja de cine"
-                                        width={286 / 2}
-                                        height={232 / 2}
-                                        layout={'responsive'}
-                                        priority={true}
-                                        loading="eager"
-                                    />
-                                </figure>
-                            </a>
-                        </Link>
-                    }
-                    {
-                        router.pathname === '/' &&
-                        <Registrate text={'Regístrate'} />
-                    }
-                </div>
-            </Limiter>
+
         </header>
     );
 }

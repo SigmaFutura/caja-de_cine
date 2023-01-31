@@ -26,7 +26,7 @@ function MainSection() {
                 />
             </figure>
             <figure className={main['figure_absolute']}>
-                <Image 
+                <Image
                     src={splash}
                     alt="Camara"
                     width={250 * 1.8}
@@ -39,8 +39,7 @@ function MainSection() {
                 <h1>Festival <br /> Caja de Cine</h1>
                 <h3>Cine desde las Regiones</h3>
                 <p>
-                    Sabemos que tienes una historia de la cultura de tu región, <br /> cuéntala y haz que se
-                    hinche tu corazón.
+                    Tú puedes ser el protagonista que cuente la historia de tu región. <br /> Haz parte del cambio del arte, la cultura y la creatividad para un país en paz.
                 </p>
                 <div>
                     <span className='typed'>
@@ -52,7 +51,7 @@ function MainSection() {
             </div>
             <Video />
             <figure className={main['figure_absolute2']}>
-                <Image 
+                <Image
                     src={event_cine}
                     alt="Camara"
                     width={280}
